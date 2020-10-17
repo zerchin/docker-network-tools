@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+table.hovertable {
+    font-family: verdana,arial,sans-serif;
+    font-size:11px;
+    color:#333333;
+    border-width: 1px;
+    border-color: #999999;
+    border-collapse: collapse;
+}
+table.hovertable th {
+    background-color:#c3dde0;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #a9c6c9;
+}
+table.hovertable tr {
+    background-color:#d4e3e5;
+}
+table.hovertable td {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #a9c6c9;
+}
+div{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    margin: -50px 0 0 -50px;
+}
+</style>
+    <head> 
+        <meta charset="UTF-8">
+        <title><!--# echo var="hostname"  --></title>
+    </head>
+    <body>
+        <div> 
+                <table class="hovertable" width="500px">
+                        <tr>
+                                <td><b>Version</b></td>
+                                <td><b><a href="/version">v1</a></b></td>
+                        </tr>
+                        <tr>
+                                <td><b>hostname</b></td>
+                                <td><!--# echo var="hostname"  --></td>
+                        </tr>
+                        <tr>
+                                <td><b>server_addr</b></td>
+                                <td><!--# echo var="server_addr" --></td>
+                        </tr>
+                                                <tr>
+                                <td><b>server_port</b></td>
+                                <td><!--# echo var="server_port" --></td>
+                        </tr>
+                        <tr>
+                                <td><b>host</b></td>
+                                <td><!--# echo var="host" default="unknown_host" --></td>
+                        </tr>
+                        <tr>
+                                <td><b>remote_addr</b></td>
+                                <td><!--# echo var="remote_addr" --></td>
+                        </tr>
+                        <tr>
+                                <td><b>request</b></td>
+                                <td><!--# echo var="request" --></td>
+                        </tr>
+                        <tr>
+                                <td><b>nginx_version</b></td>
+                                <td><!--# echo var="nginx_version" --></td>
+                        </tr>
+                        <tr>
+                                <td><b>time_local</b></td>
+                                <td><!--# echo var="time_local" --></td>
+                        </tr>
+                        <tr>
+                                <td><b>status</b></td>
+                                <td><!--# echo var="status" --></td>
+                        </tr>
+
+                </table>
+        </div>
+    </body>
+</html>
